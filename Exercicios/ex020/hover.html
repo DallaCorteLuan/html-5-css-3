@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt- br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>exemplo de hover</title>
+    <style>
+         /*
+        # = id;
+        . = class;
+        : = pseud-class;
+        :: = pseudo-element;
+        > children (filho)
+        */
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        div > p{
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+            color: chartreuse;
+            background-color: darkorange;
+            width: 150px;
+        }
+        div:hover{
+            color: coral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>passe o mouse sobre o trexto abaixo</p>
+    <div>
+        Passe o mouse aqui
+    <p>texto escondido </p>
+</div>
+<p> fim do Exemplo</p>
+</body>
+</html>

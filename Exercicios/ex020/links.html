@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        # = id;
+        . = class;
+        : = pseud-class;
+        :: = pseudo-element;
+        > children (filho)
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: rgb(255, 0, 0);
+        }
+        a:hover{
+            color: greenyellow;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: blue;
+        }
+
+        a::after{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+            content:⮕:
+        }
+
+        .especial{
+            background-color: rgba(53, 167, 4, 0.445);
+        }
+        .especial::after{
+            content:'⬅';
+        }
+        .especial::before{
+            content: '⮕';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/luandallacorte/" target="_blank">Instagram</a></li>
+
+        <li><a href="https://www.facebook.com/LuanHMDalacorte/" target="_blank">Facebook</a></li>
+
+        <li><a href="https://www.youtube.com/channel/UCKc1LTjIBZ55ANG0a0a_a4A" target="_blank" class="especial">Canal Youtube</a></li>
+    </ul>
+</body>
+</html>
