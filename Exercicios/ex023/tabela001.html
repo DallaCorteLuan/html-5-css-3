@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em HTML 5</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*Para fazer as bordas na tabelas voce usa os dados */
+
+        table.primeira {
+            width: 400px;
+            border-collapse: separate;/*a essa propriedade separa as bordas das tabelas*/
+            margin-bottom: 50px;
+        }
+
+        td {
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 5px;
+        }
+
+        table.segunda {
+            width: 400px;
+            border-collapse: collapse; /*usar a propriedade collapse vai colar as bordas da tabelas nas seguintes*/
+            margin-bottom: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Minha Tabela em HTML 5</h1>
+    <table class="primeira">
+        <tr> <!-- PRIMEIRA LINHA DA TABELA -->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+
+    <table class="segunda">
+        <tr> <!-- PRIMEIRA LINHA DA TABELA -->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+
+</body>
+</html>
