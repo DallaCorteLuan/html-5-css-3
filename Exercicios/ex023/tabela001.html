@@ -6,78 +6,152 @@
     <title>Tabelas em HTML 5</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #acfcdc;
         }
 
         /*Para fazer as bordas na tabelas voce usa os dados */
 
-        table.primeira {
-            width: 400px;
-            border-collapse: separate;/*a essa propriedade separa as bordas das tabelas*/
-            margin-bottom: 50px;
+        table {
+            width: 600px;
+            height: 300px;
+        }
+
+        table.primeira {    
+            border-radius: 20px;        
+            border-collapse: separate;/*Essa propriedade separa as bordas das tabelas*/
+            margin-bottom: 50px; 
+            
+        }
+
+        tr.linha {
+            color: #007575;
+            background-color: #ffffff;
+        }
+
+        td.linha1 {
+            padding: 5px;
+            border-radius: 20px;     
+            text-align: left;/*Alinhamento Horizontal*/
+            vertical-align: top;/*propriedades: top(em cima) bottom(em baixo) e middle(meio)*/
+       
         }
 
         td {
-            border: 1px solid black;
-            border-radius: 20px;
+            border: 1px solid #000000;
             padding: 5px;
+           
+        }
+
+        #direita {
+            text-align: right;
+        }
+        #dado{
+            background-color: #ffff00;
         }
 
         table.segunda {
-            width: 400px;
-            border-collapse: collapse; /*usar a propriedade collapse vai colar as bordas da tabelas nas seguintes*/
-            margin-bottom: 50px;
+            border-collapse: collapse;/*Essa propriedade separa as bordas das tabelas PROPRIEDADES: separate / colapse | separa as borda | junta as bordas*/
         }
 
+        td {
+            text-align: right;/*Alinhamento Horizontal*/
+            vertical-align: bottom;/*propriedades: top(em cima) bottom(em baixo) e middle(meio)*/
+        }
+
+        td.linha2 {
+            text-align: left;/*Alinhamento Horizontal*/
+            vertical-align: middle;/*propriedades: top(em cima) bottom(em baixo) e middle(meio)*/
+        }
+        td.cor {
+            background-color: #8a2be2;
+        }
+
+        td.imagem {
+            color: #ffffff;            
+            font-weight: bolder;
+            background-image: url('imagens/depositphotos_439938620-stock-illustration-modern-blue-gray-abstract-web.jpg');
+            background-position: center center;
+            background-size: 100%;
+        }
+
+        footer {
+            font-size:normal ;
+            color: #ffffff;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            background-color: #ff0000;
+            padding: 10px;   
+            margin-top: 10px;         
+        }
+
+        a {
+            text-decoration: none;
+            color: #000000;       
+            font-size: smaller;  
+        }
+        
+        a:hover {
+            background-color: #ffffff;
+            color: #ff0000;
+            border-radius: 15px;
+            padding: 3px;
+            text-decoration: underline;
+            transition: 1s;
+        }
+        
     </style>
 </head>
 <body>
     <h1>Minha Tabela em HTML 5</h1>
     <table class="primeira">
         <tr> <!-- PRIMEIRA LINHA DA TABELA -->
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
+            <td class="linha1" id="direita">A1</td>
+            <td class="linha1">B1</td>
+            <td class="linha1">C1</td>
+        </tr>
+        <tr class="linha">
+            <td class="linha1">A2</td>
+            <td class="linha1">B2</td>
+            <td class="linha1">C2</td>
         </tr>
         <tr>
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
+            <td class="linha1">A3</td>
+            <td class="linha1"id="direita">B3</td>
+            <td class="linha1">C3</td>
         </tr>
         <tr>
-            <td>A3</td>
-            <td>B3</td>
-            <td>C3</td>
-        </tr>
-        <tr>
-            <td>A4</td>
-            <td>B4</td>
-            <td>C4</td>
+            <td class="linha1">A4</td>
+            <td  class="linha1" id="dado">B4</td>
+            <td class="linha1">C4</td>
         </tr>
     </table>
 
     <table class="segunda">
         <tr> <!-- PRIMEIRA LINHA DA TABELA -->
             <td>A1</td>
-            <td>B1</td>
+            <td class="cor">B1</td>
             <td>C1</td>
         </tr>
         <tr>
-            <td>A2</td>
+            <td class="imagem">A2</td>
             <td>B2</td>
             <td>C2</td>
         </tr>
         <tr>
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="linha2">C3</td>
         </tr>
         <tr>
             <td>A4</td>
-            <td>B4</td>
+            <td class="linha2">B4</td>
             <td>C4</td>
         </tr>
     </table>
 
+    <footer>
+        Brincando com tabelas Curso HTML 5 e CSS 3 criado por <a href="https://github.com/DallaCorteLuan">LUAN DALLA CORTE</a>
+    </footer>
 </body>
 </html>
