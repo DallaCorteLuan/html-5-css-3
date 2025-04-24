@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medias Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="style/style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu </span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">OPÇÃO 1</a></li>
+                <li><a href="#">OPÇÃO 2</a></li>
+                <li><a href="#">OPÇÃO 3</a></li>
+                <li><a href="#">OPÇÃO 4</a></li>
+                <li><a href="#">OPÇÃO 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Medias Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, non quaerat accusamus in unde error magnam ipsam natus possimus esse voluptas beatae, deserunt illum maiores debitis at ullam. Expedita, quis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis vero a porro delectus totam nemo suscipit necessitatibus iusto error est? Fugiat soluta ipsum optio qui repellat doloremque aspernatur voluptas aliquid!</p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, molestiae alias incidunt ipsum est et tempore, esse enim id eius iste rem? Placeat magni eum vero ex odio. Eos, autem.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa soluta provident vero eligendi voluptatem tenetur, reiciendis tempore iure rem dolor, sit ex qui facilis possimus? Totam, quisquam dicta. Dolorum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam deserunt molestiae dolorum debitis ipsa porro tempora, nemo magnam quis esse possimus vero nulla cupiditate nisi! Eveniet distinctio exercitationem velit animi!
+            </p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
